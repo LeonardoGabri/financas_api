@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
-@CrossOrigin(origins = "${cors.origin:http://localhost:4200}")
 @RestController
 @RequestMapping("/enum/bancos")
 public class EnumBancoController {

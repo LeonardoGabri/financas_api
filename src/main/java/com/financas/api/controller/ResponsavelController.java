@@ -23,7 +23,6 @@ import javax.validation.Valid;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
-@CrossOrigin(origins = "${cors.origin:http://localhost:4200}")
 @RestController
 @RequestMapping("/responsavel")
 public class ResponsavelController {
