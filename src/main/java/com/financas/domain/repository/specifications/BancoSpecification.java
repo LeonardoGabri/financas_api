@@ -29,7 +29,7 @@ public class BancoSpecification implements Specification<Banco> {
         }
 
         if(filtro.getPesquisar() != null){
-            Predicate nome = criteriaBuilder.like(criteriaBuilder.upper(root.get("nome")), "%" + filtro.getPesquisar().toUpperCase());
+            Predicate nome = criteriaBuilder.like(criteriaBuilder.upper(root.get("responsavelNome")), "%" + filtro.getPesquisar().toUpperCase());
             predicates.add(criteriaBuilder.and(criteriaBuilder.or(nome)));
         }
 
